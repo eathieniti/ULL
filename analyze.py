@@ -1,5 +1,5 @@
 __author__ = 'efiathieniti'
-
+# Functions 
 from typing import List
 from itertools import islice
 import numpy as np
