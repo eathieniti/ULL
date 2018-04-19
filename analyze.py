@@ -33,6 +33,14 @@ def cosine_similarity(v1: Vector, v2: Vector) -> float:
     return dot_product(v1, v2) / (vector_len(v1) * vector_len(v2))
 
 
+def normalize_words(vectors):
+    """Normalize embeddings matrix row-wise.
+    Parameters
+    ----------
+      ord: normalization order. Possible values {1, 2, 'inf', '-inf'}
+    """
+    vectors = vectors.T / np.linalg.norm(vectors, axis=1)
+    return vectors.T
 
 
 #### General python dict functions
@@ -40,3 +48,9 @@ def cosine_similarity(v1: Vector, v2: Vector) -> float:
 def take(n, iterable):
     "Return first n items of the iterable as a list"
     return list(islice(iterable, n))
+
+
+
+
+
+
