@@ -2,16 +2,16 @@
 
 Evaluates three word embeddings BoW2, BoW5 and Deps obtained with Skip-Gram using different contexts. The goal of this repository is to be used as demos for comparing the three embeddings.
 
-**Examples
+##Examples
 
 The following python notebooks serves as example evaluations on different tasks, similarity, analogy and clustering. 
 
-**Instructions
+##Instructions
 
 Once the repository is cloned run the python notebooks for quantitative and qualitative embedding evaluations
 
 
-***Similarity.ipynb: 
+###Similarity.ipynb: 
 
 Description:
 Evaluates embeddings based on word similarity tasks. 
@@ -19,7 +19,7 @@ Computes Spearman and Pearson correlations against the SimLex and MEN datasets f
 
 Instructions: Other data sets could be evaluated by replacing 'word_pairs' dataframe with a new set, after loading.
 
-***Analogy.ipynb: 
+###Analogy.ipynb: 
 
 Description:
 Evaluates embdeddings based on word analogy tasks.
@@ -28,6 +28,6 @@ Performs quantitative evaluation of the predictions using Mean Reciprocal Rank a
 
 Instructions: Other sets could be evaluated by replacing the 'data/questions_words.txt' file.
 
-***Clustering.ipynb
+###Clustering.ipynb
 
 
