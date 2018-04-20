@@ -8,8 +8,7 @@ The following python notebooks serves as example evaluations on different tasks,
 
 ### Instructions
 
-Once the repository is cloned run the python notebooks for quantitative and qualitative embedding evaluations
-
+Once the repository is cloned run the python notebooks for quantitative and qualitative embedding evaluations. The zipped embedding files, bow2.words.bz2, bow5.words.bz2, deps.words.bz2 need to be added under 'data/' before running.
 
 #### Similarity.ipynb: 
 
