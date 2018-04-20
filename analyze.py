@@ -6,14 +6,6 @@ import numpy as np
 Vector = List[float]
 
 
-# text: holds the word
-# holds the vector (values)
-class Word:
-    def __init__(self, text: str, vector: Vector) -> None:
-        self.text = text
-        self.vector = vector
-
-
 #
 # Evaluate cosine similarity
 #
@@ -33,21 +25,31 @@ def cosine_similarity(v1: Vector, v2: Vector) -> float:
     return dot_product(v1, v2) / (vector_len(v1) * vector_len(v2))
 
 
-def normalize_words(vectors):
-    """Normalize embeddings matrix row-wise.
+def evaluate_similarity(word_pairs, word_vectors):
+
+    """Evaluates similarity for a set of word pairs
+
     Parameters
     ----------
-      ord: normalization order. Possible values {1, 2, 'inf', '-inf'}
+    word_pairs -- a list of word pairs eg.simlex shape: (n_pairs, 2)
+    word_vectors -- the vectors for each word from the embedding
+
+
+    Returns
+    -------
+    list with cosine similarity values for each pair (n_pairs)
+
     """
-    vectors = vectors.T / np.linalg.norm(vectors, axis=1)
-    return vectors.T
+    cosine_similarities = []
+    for index, row in word_pairs.iterrows():
+        if row[0] in word_vectors.keys() and row[1] in word_vectors.keys():
+            cos_sim = analyze.cosine_similarity(word_vectors[row[0]], word_vectors[row[1]])
+            cosine_similarities.append(cos_sim)
+        else:
+            cosine_similarities.append(np.nan)
 
+    return cosine_similarities
 
-#### General python dict functions
-
-def take(n, iterable):
-    "Return first n items of the iterable as a list"
-    return list(islice(iterable, n))
 
 
 
