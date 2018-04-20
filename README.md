@@ -1,6 +1,6 @@
 # ULL - Evaluating Word Embeddings
 
-Evaluates three word embeddings BoW2, BoW5 and Deps obtained with Skip-Gram using different contexts. The goal of this repository is to be used as demos for comparing the three embeddings.
+Evaluates three word embeddings BoW2, BoW5 and DEPS obtained with Skip-Gram using different contexts. The goal of this repository is to be used as demos for comparing the three embeddings.
 
 ## Examples
 
