@@ -25,7 +25,7 @@ Evaluates embdeddings based on word analogy tasks.
 Computes the analogous word for each question in the Google analogy test set. 
 Performs qualitative evaluation of the predictions by looking at 3 predicted answers from each model for selected queries
 
-#### Analogy_qualitative_with_batching.ipynb: 
+#### Analogy_Quantitative_with_batching2.ipynb: 
 
 Description:
 As the previous but performs quantitative evaluation of the predictions in the whole Google analogy test set using Mean Reciprocal Rank and accuracy. 
