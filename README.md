@@ -35,6 +35,9 @@ Instructions: Other sets could be evaluated by replacing the 'data/questions_wor
 
 #### Clustering.ipynb
 
-%% TODO: 
+Description:
+This file performes the K-Means algorithm on the three embeddings, it can be tested with variations in the number of clusters. It outputs a csv file with the results. A collection of results for 100, 200, 300, 400 and 500 can be found in the repository under 'Results'.
+
+Instructions: Different numbers of clusters can be filled and different embeddings can be used.
 
 
