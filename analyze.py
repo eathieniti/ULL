@@ -43,7 +43,7 @@ def evaluate_similarity(word_pairs, word_vectors):
     cosine_similarities = []
     for index, row in word_pairs.iterrows():
         if row[0] in word_vectors.keys() and row[1] in word_vectors.keys():
-            cos_sim = analyze.cosine_similarity(word_vectors[row[0]], word_vectors[row[1]])
+            cos_sim = cosine_similarity(word_vectors[row[0]], word_vectors[row[1]])
             cosine_similarities.append(cos_sim)
         else:
             cosine_similarities.append(np.nan)
